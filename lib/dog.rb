@@ -2,11 +2,13 @@
 class Dog 
   @@all = []
   
-  attr_accessor
+  #attr_accessor
   
   def initialize
+    save 
+  end
+  def save
     @@all << self 
-    
   end
   
   def self.all 
@@ -19,7 +21,10 @@ class Dog
      end
   end
   
-  
+  def self.clear_all
+    @@all.clear 
+  end
+    
   
   
   
