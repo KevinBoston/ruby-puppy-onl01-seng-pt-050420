@@ -5,6 +5,7 @@ class Dog
   #attr_accessor
   
   def initialize(name)
+    @self = name
     save 
   end
   def save
