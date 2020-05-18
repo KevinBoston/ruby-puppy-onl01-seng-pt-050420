@@ -4,7 +4,7 @@ class Dog
   
   #attr_accessor
   
-  def initialize
+  def initialize(name)
     save 
   end
   def save
@@ -24,9 +24,4 @@ class Dog
   def self.clear_all
     @@all.clear 
   end
-    
-  
-  
-  
-  
 end
